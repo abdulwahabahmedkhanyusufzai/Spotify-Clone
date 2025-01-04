@@ -75,11 +75,6 @@ app.get("/", (req, res) => {
     res.status(404).json({ message: "API route found" });
   });
 
+  connectDB();
+  export default app;
 
-
-
-
-httpServer.listen(PORT, () => {
-	console.log("Server is running on port " + PORT);
-	connectDB();
-});
